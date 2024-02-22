@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Name)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXr-b8-LKJ">
+                                <rect key="frame" x="71.666666666666686" y="69" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Zqd-9n-Zho"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Title)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpT-gC-R2t">
+                                <rect key="frame" x="71.666666666666686" y="123" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="1eP-uS-NlT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Age)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBy-cN-Cic">
+                                <rect key="frame" x="71.666666666666686" y="177" width="250" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="PRF-RY-Ld7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="diL-5d-1Gv">
+                                <rect key="frame" x="10" y="225" width="373" height="373"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="diL-5d-1Gv" secondAttribute="height" multiplier="1:1" id="ZJb-Mi-3bM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="100" verticalHuggingPriority="251" text="(Bio)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UP9-I2-HcD">
+                                <rect key="frame" x="71.666666666666686" y="622" width="250" height="15.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="BTb-gx-KHc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DXr-b8-LKJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6UQ-iF-hTm"/>
+                            <constraint firstItem="UP9-I2-HcD" firstAttribute="top" secondItem="diL-5d-1Gv" secondAttribute="bottom" constant="24" id="DFS-2G-vUc"/>
+                            <constraint firstItem="diL-5d-1Gv" firstAttribute="top" secondItem="iBy-cN-Cic" secondAttribute="bottom" constant="24" id="KHJ-tS-nln"/>
+                            <constraint firstItem="UP9-I2-HcD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ner-1Q-JSp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="diL-5d-1Gv" secondAttribute="trailing" constant="10" id="bOJ-wA-8CH"/>
+                            <constraint firstItem="iBy-cN-Cic" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cng-qq-lLR"/>
+                            <constraint firstItem="NpT-gC-R2t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lQX-NP-dWh"/>
+                            <constraint firstItem="NpT-gC-R2t" firstAttribute="top" secondItem="DXr-b8-LKJ" secondAttribute="bottom" constant="24" id="o4w-3N-T28"/>
+                            <constraint firstItem="iBy-cN-Cic" firstAttribute="top" secondItem="NpT-gC-R2t" secondAttribute="bottom" constant="24" id="thC-dS-zyR"/>
+                            <constraint firstItem="DXr-b8-LKJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="yFD-dB-v8g"/>
+                            <constraint firstItem="diL-5d-1Gv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="zDz-8r-6ZG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="iBy-cN-Cic" id="Cjn-Hy-tDC"/>
+                        <outlet property="bioLabel" destination="UP9-I2-HcD" id="laD-QZ-MFB"/>
+                        <outlet property="nameLabel" destination="DXr-b8-LKJ" id="ADp-Jp-L7s"/>
+                        <outlet property="profileImageView" destination="diL-5d-1Gv" id="ACS-Fu-53L"/>
+                        <outlet property="titleLabel" destination="NpT-gC-R2t" id="1lW-1L-g5e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119.84732824427481" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
